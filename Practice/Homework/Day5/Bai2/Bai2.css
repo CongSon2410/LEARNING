@@ -1,0 +1,36 @@
+body{
+    background-color: white;
+}
+
+.container{
+    width: 50%;
+    height: 500px;
+    vertical-align: top;
+    margin-top: 10px;
+    display: inline-block;
+}
+.container1{
+    width: 49%;
+    height: 450px;
+    margin-top: 10px;
+    display: inline-block;
+    margin-left: -30px;
+}
+.border{
+    border-style:solid none solid solid;
+    border-color: rgb(98, 184, 224);
+    color: black;
+    border-width: 10px;
+    width: 60%;
+    height: 335px;
+    color: black;
+    padding: 50px 50px
+}
+.txt1{
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+.txt2{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
