@@ -1,0 +1,54 @@
+.bg-yellow{
+    background: yellow;
+}
+.bg-orange1{
+    background-color: orange;
+}
+
+.bg-orange2{
+    background-color: rgb(245, 193, 98);
+}
+.bg-white{
+    background-color: white;
+}
+.bg-red{
+    background-color: red;
+}
+.bg-black{
+    background-color:black;
+    color: white;
+}
+.bg-blue{
+    background-color: blue;
+}
+
+.h-100px{
+    height: 100px;
+}
+
+.h-500{
+    height: 500px;
+}
+
+.w-full{
+    width: 100%;
+}
+.relative {
+    position: relative;
+}
+.absolute{
+    position: absolute;
+}
+.absolute-center{
+    top: calc(100% -250px);
+    left: calc(100% -250px);
+}
+
+.table{
+    color:black;
+
+}
+
+.border{
+    border: 2px solid;
+}
