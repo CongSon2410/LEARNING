@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Oswald:wght@200&family=Playfair+Display&family=Roboto:ital,wght@0,100;1,100&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: white;
+        }
+       .item {
+        display: inline-block;
+        padding: 5px 40px;
+        border-radius: 5px
+        }
+        .con{
+            background-color: black;
+            border-radius: 10px;
+            height: 40px;
+            width: fit-content;
+            margin: 50px auto;
+        }
+    
+    .item:hover {
+        background-color: orange;
+        color: white
+    }
+    /* Client*/
+    .client{
+        display: none;
+    }
+    .item-client:hover .client{
+        display: block;
+        color:black;
+        top:30px;
+        width:100%;
+        left:0px;
+    }
+    .client-item{
+        text-align: center;
+        background-color: orange;
+        color: black;
+    }
+    .client-item:hover{
+        background-color: aliceblue;
+        color: orange;
+    }
+    /* Client */
+    .service{
+        display: none;
+    }
+    .item-service:hover .service{
+        display: block;
+        color: black;
+        top:30px;
+        width: 100%;
+        left: 0px;
+    }
+    .service-item{
+        text-align: center;
+        background-color: orange;
+        color: black;
+    }
+    .service-item:hover{
+        background-color: aliceblue;
+        color: orange;
+    }
+    /* Service */
+    .relative{
+        position: relative;
+    }
+    .absolute{
+        position: absolute;
+    }
+    </style>
+</head>
+<body>
+    <div class="con">
+        <div class="item">Home</div>
+        <div class="item">About</div>
+        <div class="item item-client relative">Clients
+            <div class="client absolute">
+                <div class="client-item">Burger</div>
+                <div class="client-item">Humberg</div>
+                <div class="client-item">Cream</div>
+            </div>
+        </div>
+        <div class="item item-service relative">Service
+            <div class="service absolute">
+                <div class="service-item">Print</div>
+                <div class="service-item">Web</div>
+                <div class="service-item">Undo</div>
+            </div>
+        </div>
+        <div class="item">Contact</div>
+    </div>
+</body>
+</html>

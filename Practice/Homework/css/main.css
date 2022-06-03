@@ -1,0 +1,43 @@
+    .bg-orange{
+        background-color: orange;
+    }
+    .bg-white{
+        background-color: white;
+    }
+    .bg-red{
+        background-color: red;
+    }
+    .bg-black{
+        background-color:black;
+    }
+    .bg-blue{
+        background-color: blue;
+    }
+
+    .h-100px{
+        height: 100px;
+    }
+    .h-500px{
+        height: 500px;
+    }
+    .h-full{
+        height: 1000px;
+    }
+
+    .w-full{
+        width: 100%;
+    }
+    .w-100px{
+        width: 100px;
+    }
+
+    .inline-block{
+        display: inline-block;
+    }
+    .relative {
+        position: relative;
+    }
+    .absolute{
+        position: absolute;
+    }
+    
