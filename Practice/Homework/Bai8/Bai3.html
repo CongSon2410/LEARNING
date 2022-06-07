@@ -1,0 +1,108 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="./../css/main.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora&family=Open+Sans:wght@300&family=Oswald:wght@200&family=Playfair+Display&family=Roboto:ital,wght@0,100;1,100&display=swap" rel="stylesheet">
+    </head>
+    <style>
+        .container{
+            background-color: gray;
+            width: fit-content;
+            height: 350px;
+            margin: 0px auto;
+        }
+
+        .content{
+            width: 100%;
+            height: 500px;
+        }
+
+        .content-item{
+            width: 250px;
+            height: 300px;
+            margin: 20px;
+            overflow: hidden;
+        }
+        .content-item-image{
+            width: 250px;
+            height: 300px;
+            transition: all 0.8s ease-in-out;
+        }
+
+        .content-item:hover .content-item-image{
+            width: 280px;
+            height: 330px;
+            
+        }
+        .overlay{
+            top: 80%;
+            left: 0;
+            width: 100%;
+            height: 50%;
+            opacity: 0.3;
+            transition: all 0.5s ease-in-out;
+        }
+        .content-item:hover .overlay {
+            opacity: 0.5;
+            top: 50%;
+            height: 50%;
+        }
+
+        .content-item:hover .overlay-title .txt1{
+            color: yellow;
+        }
+        .overlay-title{
+            font-family: 'Lora', serif;
+            color: white;
+            font-size: 13px;
+        }
+        .txt1{
+            font-size: 20px;
+            color: white;
+        }
+
+    </style>
+    <body style="background-color: black;">
+        <div class="container">
+            <div class="content">
+                <div class="inline-block content-item relative">
+                    <img class="content-item-image" src="https://images.pexels.com/photos/127513/pexels-photo-127513.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260" alt="">
+                    <div class="overlay absolute">
+                        <div class="overlay-title">
+                            <div class="txt1">Amazing Second Title</div>
+                            <div>June 29,2018</div>       
+                            <div>France is one of Europe’s largest countries. It is bordered by six countries other nations: Germany, Belgium and Luxembourg to the northeast, Switzerland and Italy to the southeast and Spain to the southwest.</div>                    
+                        </div>
+                    </div>
+                </div>               
+                <div class="inline-block content-item relative">
+                    <img class="content-item-image" src="https://images.pexels.com/photos/631954/pexels-photo-631954.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260" alt="">
+                    <div class="overlay absolute">
+                        <div class="overlay-title">
+                            <div class="txt1">Amazing Second Title</div>
+                            <div>June 29,2018</div>  
+                            <div>The United Kingdom borders France via the English Channel. </div>                         
+                        </div>
+                    </div>
+                </div>
+                <div class="inline-block content-item relative">
+                    <img class="content-item-image" src="https://images.pexels.com/photos/248486/pexels-photo-248486.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260" alt="">
+                    <div class="overlay absolute">
+                        <div class="overlay-title">
+                            <div  class="txt1">Amazing Third Title</div>
+                            <div class="overlay-">June 29,2018</div>
+                            <div>France is the most popular tourist destination in the world. There are many reasons why so many people enjoy visiting the diverse country, including the natural beauty, the amazing climate, outdoor recreational activities such as golf courses, art museums and galleries and so much more. </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </body>
+    </html>
