@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./../css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap" rel="stylesheet">
+</head>
+<style>
+    :root {
+        --heading-font-size: 18px;
+        --para-font-size: 14px;
+    }
+
+    body {
+        background-color: rgb(255, 255, 255);
+        height: 100vh;
+        width: 100vw;
+        font-family: 'Oswald', sans-serif;
+    }
+
+    .flex {
+        display: flex;
+    }
+
+    .container {
+        height: 500px;
+        flex-direction: row;
+        gap: 3px;
+
+        margin: 0 auto;
+    }
+
+    .content_left {
+        width: 40%;
+        height: 420px;
+        background-color: rgb(239, 238, 244);
+
+        flex-direction: column;
+        gap: 20px;
+        padding: 40px 20px;
+    }
+
+    .content_right {
+        width: 60%;
+        height: 500px;
+        background-color: rgb(239, 238, 244);
+        flex-direction: row;
+    }
+
+    .content {
+        background-color: white;
+        flex-direction: column;
+        gap: 10px;
+        justify-content: center;
+        align-items: center;
+        width: 60%;
+    }
+
+    .img {
+        height: 50px;
+        width: 50px;
+        object-fit: cover;
+    }
+
+    .title {
+        font-size: var(--para-font-size);
+    }
+
+    .heading {
+        font-size: var(--heading-font-size);
+        font-weight: bold;
+    }
+
+    .ending {
+        width: fit-content;
+        border: rgb(91, 83, 143) 1px solid;
+        padding: 10px;
+        color: rgb(91, 83, 143);
+        font-weight: bold;
+        font-size: 14px;
+    }
+
+    .sub {
+        font-size: 16px;
+        font-weight: bold;
+    }
+    .border{
+        border-right:rgb(239, 238, 244) 3px solid;
+        border-left: rgb(239, 238, 244) 3px solid;
+    }
+
+    /* reponsive tren 1200px */
+
+
+    @media only screen and (max-width: 1199px) {
+        .container {
+            flex-direction: column !important;
+        }
+
+        .content_left {
+            width: 100% !important;
+            height:300px!important;
+        }
+
+        .content_right {
+            width: 100% !important;
+        }
+    }
+    @media only screen and (max-width: 767px) {
+        .container {
+            flex-direction: column !important;
+            gap: 30px;
+        }
+        .content_left {
+            width: 100% !important;
+            height:500px!important;
+        }
+        .border{
+            border-right:none!important;
+            border-left: none!important;
+            
+        }
+        .content_right {
+            flex-direction: column;
+            width: 100% !important;
+            height: 150px;
+            align-items: center;    
+            justify-content: space-between  ;
+            align-items: center;
+            gap: 50px;
+            background-color: white;
+        }
+        .content{
+            margin: 0 auto!important;
+            width: 100%!important;
+            height: 150px!important;
+            border-top: rgb(239, 238, 244) 3px solid;
+        }
+    }
+</style>
+
+<body>
+    <div class="container flex">
+        <div class="content_left flex">
+            <div class="title heading">Spigot Powers Small Businesses & Organizations</div>
+            <div class="title">We're a team of Utah web design and marketing professionals who know what it takes to
+                create and maintain a site that ranks.</div>
+            <div class="title">Propelled by in-depth SEO research and a targeted site strategy, our web designers and
+                developers build clean and responsive custom WordPress websites that drive traffic and keep audiences
+                engaged.</div>
+            <div class="title">That all sounds a little dry, we know. But it's really a lot of fun... we promise. </div>
+            <div class="title ending">LET'S GET THIS PARTY STARTED</div>
+        </div>
+        <div class="content_right flex">
+            <div class="content flex">
+                <div class="item">
+                    <div class="item">
+                        <img class="img"
+                            src="https://cdn2.iconfinder.com/data/icons/web-design-and-development-47/258/3-256.png"
+                            alt="">
+                    </div>
+                </div>
+                <div class="sub">WEB DESIGN</div>
+            </div>
+            <div class="content border flex">
+                <div class="item">
+                    <img class="img"
+                        src="https://cdn4.iconfinder.com/data/icons/marketing-and-digital-marketing/32/business_marketing_advertising_digital_marketing-31-128.png"
+                        alt="">
+                </div>
+                <div class="sub">DIGITAL MARKETING</div>
+            </div>
+            <div class="content flex">
+                <div class="item">
+                    <img class="img"
+                        src="https://cdn1.iconfinder.com/data/icons/follow-the-herd/512/wordpress_left-128.png" alt="">
+                </div>
+                <div class="sub">WORDPRESS SUPPORT</div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
