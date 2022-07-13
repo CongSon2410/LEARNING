@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script src="./script.js"></script>
+
+    <p id="thep1"></p>
+    <button onclick="Bai1()">Bai 1</button>
+    <br>
+
+    <p id="thep2"></p>
+    <button onClick="Bai2()">Nhap ho ten</button>
+    <br>
+
+    <p id="thep3tong"></p>
+    <p id="thep3hieu"></p>
+    <p id="thep3tich"></p>
+    <p id="thep3thuong"></p>
+    <button onClick="Bai3()">Nhap a va b</button>
+    <br>
+
+    <p id="random"></p>
+    <button onClick="Bai4()">Random 1 100</button>
+    <br>
+
+    <p id="nhietdo"></p>
+    <button onClick="nhietdoC()">Đổi nhiệt độ C</button>
+    <button onClick="nhietdoF()">Đổi nhiệt độ F</button>
+
+    <br>
+    <h2>loading</h2>
+    <div class="loading-bar" style="width:500px; height:10px; border: 1px solid black; border-radius:99px ;">
+        <div class="loading-process" id="loadingg"
+            style="width:0px; height:10px; background-color:greenyellow; transition: width 10s ease-in-out"></div>
+    </div>
+    <button onClick="loading()">Click to load</button>
+    <br>
+
+    <input type="text" id="text" oninput="HienThi()">
+    <div class="display"></div>
+    <br>
+
+    <button onClick="FindMax()">Tìm max</button>
+    <p id="max"></p>
+</body>
+
+</html>

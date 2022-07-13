@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./../../Practice/Homework/css/main.css">
+    <title>Document</title>
+</head>
+<style>
+    .container{
+
+
+        margin: 0 auto;
+        width: 100%;
+        height: 500px;
+    }
+    .content{
+        display: flex;
+        flex-direction: row;
+    }
+    .img{
+        width: 100%;
+        height: 300px;
+    }
+    .content:hover .img{
+        width: 100%;
+        height: 300px;
+        transition: all 0.5s ease-out;
+    }
+
+
+</style>
+<body>
+    <div class="container">
+        <div class="content">
+            <div class="content-img relative">
+                <img class="img" src="https://source.unsplash.com/3IEZsaXmzzs/1500x1200" alt="">
+                <div class="overlay absolute"></div>  
+            </div>
+            <div class="content-img relative">
+                <img class="img" src="https://source.unsplash.com/BIZv8MWH00s/1500x1200" alt="">
+            </div>
+            <div class="content">
+                <img class="img" src="https://source.unsplash.com/z55CR_d0ayg/1500x1200" alt="">
+            </div>
+            <div class="container-content">
+                <img class="img" src="https://source.unsplash.com/-FgZlbzZ0R8/1500x1200" alt="">
+            </div>
+        </div>
+        
+    </div>
+</body>
+</html>

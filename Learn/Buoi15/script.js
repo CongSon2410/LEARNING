@@ -1,7 +1,7 @@
 function Bai1(){
 
-    let dauvao = parseInt(document.getElementById("dauvao1"));
-    if(dauvao > 0){
+    let a = prompt("Nhap so nguyen duong or nguyen am");
+    if(a > 0){
         document.getElementById("p1ketqua").innerHTML = "Day la so nguyen duong"
     }
     else{
@@ -51,4 +51,13 @@ function Bai6(){
     else{
         document.getElementById("checkstatus").innerHTML = "NO";  
     }
+}
+
+function Bai7(){
+    let sdt = document.getElementById("sdt").value;
+    let ankytu = sdt.replace(/\d{4}$/, '****');
+    let xoa = document.getElementById("sdt").value;;
+    // xoa.slice(1,-4).concat("****");
+
+    document.getElementById("ankytu").innerHTML = xoa;   
 }

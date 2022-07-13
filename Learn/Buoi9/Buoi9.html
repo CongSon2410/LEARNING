@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container-grid {
+            display: grid;
+            width: 100%;
+            height: 400px;
+            background-color: blue;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            gap: 20px;
+        }
+        .item-text{
+            display: grid;
+            grid-column: 1 / 2;
+            grid-row-start: 1;
+            grid-row-end: 3;
+            background-color: white;
+        }
+        .item-img1{
+            display: grid;
+            grid-column: 2 /span 3;
+            grid-row-start: 1;
+            grid-row-end: 1;
+
+        }
+        .item-img2{
+            display: grid;
+            grid-column: 3 / 4;
+
+        }
+        .item-img3{
+            display: grid;
+            grid-column: 2 /span 4;
+            grid-row-start: 1;
+            grid-row-end: 1;
+
+        }
+        .img1{
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+        .img2{
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+        .img3{
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+       
+
+        .item-img3{
+            display: grid;
+            grid-column: 3/2;
+
+        }
+       
+       
+    </style>
+</head>
+
+<body>
+    <div class="container-grid">
+        <div class="item-text"> Travel and see the world</div>
+        <div class="item-img1">
+            <div>
+                <img class="img1" src="https://images.pexels.com/photos/443416/pexels-photo-443416.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260"
+                    alt="">
+            </div>
+
+        <div class="item-img2">
+                <div>
+                    <img class="img2" src="https://images.pexels.com/photos/542411/pexels-photo-542411.png?auto=compress&cs=tinysrgb&h=750&w=1260"
+                        alt="">
+                </div>
+
+        </div>
+        <div class="item-img-3">
+                <div>
+                    <img class="img3" src="https://images.pexels.com/photos/614494/pexels-photo-614494.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260"
+                        alt="">
+                </div>
+        </div>
+    </div>
+</body>
+
+</html>

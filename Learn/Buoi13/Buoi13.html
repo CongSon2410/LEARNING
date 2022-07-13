@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background-image: radial-gradient(#262626,white);
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        perspective: 600px;
+
+    }
+
+    .road{
+        position: relative;
+        width: 680px;
+        height: 200px;
+        transform: rotateX(60deg);
+        background-color: #505050;
+    }
+    .road-2{
+        position: absolute;
+        width: 680px;
+        height: 10px;
+        background-color: wheat;
+        
+
+    }
+    </style>
+<body>
+   <div class="road"></div>
+   <div class="road-2"></div>
+</body>
+</html>
